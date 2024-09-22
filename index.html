@@ -1,34 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+    <title>测试您的风格</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <iframe src="<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
-    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-    border-radius: 8px; will-change: transform;">
-     <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-       src="https://www.canva.com/design/DAGReND6NUE/9t2vKtPAeHF6O3c40skafg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-     </iframe>
-   </div>
-   <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGReND6NUE&#x2F;9t2vKtPAeHF6O3c40skafg&#x2F;view?utm_content=DAGReND6NUE&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">找准风格quiz</a> by Ang junqi" allowfullscreen></iframe>
+    <div class="app">
+        <h1>找准您的风格</h1>
+        <hr>
+        <div class="quiz">
+            <h2 id="question">问题在这</h2>
+            <div id="answer-buttons">
+                <button class="btn">長形臉/方形臉</button>
+                <button class="btn">圓形臉/鵝蛋臉</button>
+            </div>
+            <button id="next-btn">继续</button>
+        </div>
+        <script src="script.js"></script>
+    </div>
 </body>
+
 </html>

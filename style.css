@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #edece8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "微軟正黑體", "Microsoft JhengHei",  Tahoma , Verdana , Arial , sans-serif;
+}
+
+.app h1 {
+    font-size: 22px;
+    color: #001e4d;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "微軟正黑體", "Microsoft JhengHei",  Tahoma , Verdana , Arial , sans-serif;
+}
+
+.quiz {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: "微軟正黑體", "Microsoft JhengHei",  Tahoma , Verdana , Arial , sans-serif;
+}
+
+.btn {
+    background: #71906e;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 25px; /* Rounded buttons */
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #1d2f1a;
+}
+
+#next-btn {
+    background: grey;
+    color: white;
+    font-weight: 500;
+    width: 50%;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 25px;
+}
+
+#answer-buttons {
+    font-family: "微軟正黑體", "Microsoft JhengHei",  Tahoma , Verdana , Arial , sans-serif;
+}
+
+/* Responsive design: tablet */
+@media (min-width: 768px) {
+    .app {
+        max-width: 600px;
+    }
+}
+
+/* Responsive design: desktop */
+@media (min-width: 1024px) {
+    .app {
+        max-width: 800px;
+    }
+}
