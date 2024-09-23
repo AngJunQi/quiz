@@ -14,7 +14,7 @@ const questions = [
         ]
     },
     {
-        question: "选择你的脸型风格",
+        question: "选择你的性格",
         answers: [
             { text: "偏 豪 邁 直 爽 型", correct: true },
             { text: "偏 溫 柔 内 斂 型", correct: false },
