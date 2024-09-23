@@ -10,7 +10,7 @@
 
 <body>
     <div class="app">
-        <h1>找准您的风格</h1>
+        <h1 id="h1">找准您的风格</h1>
         <hr>
         <div class="quiz">
             <h2 id="question">问题在这</h2>
@@ -18,8 +18,18 @@
                 <button class="btn">長形臉/方形臉</button>
                 <button class="btn">圓形臉/鵝蛋臉</button>
             </div>
+            <button id="back-btn">返回上题</button>
             <button id="next-btn">继续</button>
         </div>
+        <div class="result">
+            <button id="show-result-btn">解锁奖励</button>
+            <button class="btn" id="result3-btn" style="display: none;"><h1 id="result-text3" style="display: none;">RM400 <蜕变之旅> 现金券<br>The WES Studio 购物券</h1></button>
+            <p id="result-text5" style="display: none;">*限量好康 先到先得</p>
+            <br><br>
+            <h3 id="result-text1" style="display: none;">只需到Dream+ X Kaloz摊位</h3>
+            <h3 id="result-text2" style="display: none;">展示此页面给摊位工作人员</h3>
+        </div>
+        <hr id="hr">
         <script src="script.js"></script>
     </div>
 </body>

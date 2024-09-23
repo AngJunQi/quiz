@@ -16,7 +16,7 @@ body {
 }
 
 .app h1 {
-    font-size: 22px;
+    font-size: 32px;
     color: #001e4d;
     font-weight: 600;
     text-align: center;
@@ -24,13 +24,21 @@ body {
     font-family: "微軟正黑體", "Microsoft JhengHei",  Tahoma , Verdana , Arial , sans-serif;
 }
 
+hr {
+    width: 75%; /* Adjust the percentage or use a fixed width like 300px */
+    border: 1px solid #001e4d; /* You can customize the color */
+    margin: 20px auto;
+    margin-top: 5px;
+}
+
+
 .quiz {
     padding: 10px 0;
     text-align: center;
 }
 
 .quiz h2 {
-    font-size: 18px;
+    font-size: 24px;
     color: #001e4d;
     font-weight: 600;
     margin-bottom: 20px;
@@ -41,17 +49,32 @@ body {
     background: #71906e;
     color: white;
     font-weight: 500;
-    width: 100%;
+    width: 80%;
     border: none;
     padding: 15px;
     margin: 10px 0;
     cursor: pointer;
     border-radius: 25px; /* Rounded buttons */
     transition: all 0.3s;
+    font-size: 18px;
 }
 
 .btn:hover {
     background: #1d2f1a;
+}
+
+#back-btn {
+    background: grey;
+    color: #fff;
+    width: 20%;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: none;
 }
 
 #next-btn {
@@ -64,12 +87,72 @@ body {
     cursor: pointer;
     margin: auto;
     margin-top: 25px;
+    font-size: 16px;
 }
 
 #answer-buttons {
     font-family: "微軟正黑體", "Microsoft JhengHei",  Tahoma , Verdana , Arial , sans-serif;
 }
 
+.result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#show-result-btn {
+    background: #71906e;
+    color: white;
+    font-weight: 500;
+    width: 60%;
+    padding: 15px;
+    margin: auto;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+#show-result-btn:hover {
+    background: #1d2f1a;
+}
+
+#result-text1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #001e4d;
+    margin-top: 20px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
+}
+
+#result-text2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #001e4d;
+    margin-top: 20px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
+}
+
+#result-text3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #edece8;
+    margin-top: 20px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
+}
+
+#result3-btn {
+    background: #71906e;
+    margin: auto;
+}
+
+#result-text5 {
+    font-size: 14px;
+    color: #001e4d;
+    margin-top: 20px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
+}
+#hr {
+    margin-top: 50px;
+}
 /* Responsive design: tablet */
 @media (min-width: 768px) {
     .app {

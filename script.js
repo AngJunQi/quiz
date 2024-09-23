@@ -36,17 +36,30 @@ const questions = [
     }
 ];
 
+const h1Element = document.getElementById("h1");
+const hrElement = document.getElementById("hr");
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
-
+const backButton = document.getElementById("back-btn");
+const showResultButton = document.getElementById("show-result-btn");
+const resultText1 = document.getElementById("result-text1");
+const resultText2 = document.getElementById("result-text2");
+const resultText3 = document.getElementById("result-text3");
+const resultText5 = document.getElementById("result-text5");
+const result3Btn = document.getElementById("result3-btn");
+let selectedAnswers = [];
 let currentQuestionIndex = 0;
 let score = 0;
 
 function startQuiz(){
     currentQuestionIndex = 0;
     score = 0;
+    selectedAnswers = [];
     nextButton.innerHTML = "继续";
+    showResultButton.style.display = 'none';
+    backButton.style.display = "none"; // Initially hide the back button
+    hrElement.style.display = "none";
     showQuestion();
 }
 
@@ -65,7 +78,13 @@ function showQuestion() {
             button.dataset.correct = answer.correct;
         }
         button.addEventListener("click", selectAnswer);
-    })
+    });
+
+    if (currentQuestionIndex > 0) {
+        backButton.style.display = "block"; // Show the back button after the first question
+    } else {
+        backButton.style.display = "none"; // Hide on the first question
+    }
 }
 
 function resetState() {
@@ -95,22 +114,35 @@ function selectAnswer(e) {
 
 function showScore() {
     resetState();
-    if (score > 2){
+    if (score > 2) {
         questionElement.innerHTML = '大量感五官';
     } else {
         questionElement.innerHTML = '小量感五官';
     }
-    nextButton.innerHTML = "解锁奖励";
-    nextButton.style.display = "block";
+    showResultButton.style.display = "block";
+    backButton.style.display = "none";
+    nextButton.style.display = "none"; // Hide the next button
+    document.querySelector(".result").style.display = "block"; // Show the result button
 }
+
 
 function handleNextButton() {
     currentQuestionIndex++;
     if(currentQuestionIndex < questions.length) {
         showQuestion();
     } else {
-        
         showScore();
+    }
+}
+
+function handleBackButton() {
+    // Decrement the currentQuestionIndex and adjust score if necessary
+    if (currentQuestionIndex > 0) {
+        if (selectedAnswers[currentQuestionIndex] === true) {
+            score--; // Adjust score if going back from a correct answer
+        }
+        currentQuestionIndex--;
+        showQuestion();
     }
 }
 
@@ -120,5 +152,22 @@ nextButton.addEventListener("click", ()=>{
     } else {
         startQuiz()
     }
-})
+});
+
+backButton.addEventListener("click", () => {
+    handleBackButton();
+});
+
+showResultButton.addEventListener("click", () => {
+    resultText1.style.display = "block";
+    resultText2.style.display = "block";
+    result3Btn.style.display = "block";
+    resultText3.style.display = "block";
+    resultText5.style.display = "block";
+    questionElement.style.display = "none";
+    h1Element.innerHTML = "快來领取您的专属奖励";
+    hrElement.style.display = "block";
+    showResultButton.style.display = "none";
+});
+
 startQuiz();
