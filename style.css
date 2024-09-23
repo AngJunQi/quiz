@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'KaiTi', sans-serif;
     box-sizing: border-box;
 }
 
@@ -12,7 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: "微軟正黑體", "Microsoft JhengHei",  Tahoma , Verdana , Arial , sans-serif;
+    font-family: "KaiTi";
 }
 
 .app h1 {
@@ -21,7 +21,7 @@ body {
     font-weight: 600;
     text-align: center;
     padding-bottom: 20px;
-    font-family: "微軟正黑體", "Microsoft JhengHei",  Tahoma , Verdana , Arial , sans-serif;
+    font-family: "KaiTi";
 }
 
 hr {
@@ -42,7 +42,7 @@ hr {
     color: #001e4d;
     font-weight: 600;
     margin-bottom: 20px;
-    font-family: "微軟正黑體", "Microsoft JhengHei",  Tahoma , Verdana , Arial , sans-serif;
+    font-family: "KaiTi";
 }
 
 .btn {
@@ -91,7 +91,7 @@ hr {
 }
 
 #answer-buttons {
-    font-family: "微軟正黑體", "Microsoft JhengHei",  Tahoma , Verdana , Arial , sans-serif;
+    font-family: "KaiTi";
 }
 
 .result {
@@ -120,7 +120,7 @@ hr {
     font-weight: bold;
     color: #001e4d;
     margin-top: 20px;
-    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
+    font-family: "KaiTi";
 }
 
 #result-text2 {
@@ -128,7 +128,7 @@ hr {
     font-weight: bold;
     color: #001e4d;
     margin-top: 20px;
-    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
+    font-family: "KaiTi";
 }
 
 #result-text3 {
@@ -136,7 +136,7 @@ hr {
     font-weight: bold;
     color: #edece8;
     margin-top: 20px;
-    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
+    font-family: "KaiTi";
 }
 
 #result3-btn {
@@ -148,7 +148,7 @@ hr {
     font-size: 14px;
     color: #001e4d;
     margin-top: 20px;
-    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
+    font-family: "KaiTi";
 }
 #hr {
     margin-top: 50px;
