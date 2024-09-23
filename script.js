@@ -48,11 +48,16 @@ const resultText2 = document.getElementById("result-text2");
 const resultText3 = document.getElementById("result-text3");
 const resultText5 = document.getElementById("result-text5");
 const result3Btn = document.getElementById("result3-btn");
+
+// Adding new elements for displaying the final result messages
+const daliangganMessage = document.getElementById("dalianggan-message");
+const xiaoliangganMessage = document.getElementById("xiaolianggan-message");
+
 let selectedAnswers = [];
 let currentQuestionIndex = 0;
 let score = 0;
 
-function startQuiz(){
+function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     selectedAnswers = [];
@@ -74,7 +79,7 @@ function showQuestion() {
         button.innerHTML = answer.text;
         button.classList.add("btn");
         answerButtons.appendChild(button);
-        if (answer.correct){
+        if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
         button.addEventListener("click", selectAnswer);
@@ -89,7 +94,7 @@ function showQuestion() {
 
 function resetState() {
     nextButton.style.display = "none";
-    while(answerButtons.firstChild) {
+    while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
@@ -104,7 +109,7 @@ function selectAnswer(e) {
         selectedBtn.classList.add("incorrect");
     }
     Array.from(answerButtons.children).forEach(button => {
-        if(button.dataset.correct === "true") {
+        if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
         button.disabled = true;
@@ -114,21 +119,25 @@ function selectAnswer(e) {
 
 function showScore() {
     resetState();
+    
+    // Show specific result message based on the score
     if (score > 2) {
         questionElement.innerHTML = '大量感五官';
+        daliangganMessage.style.display = "block"; // Show 大量感 message
     } else {
         questionElement.innerHTML = '小量感五官';
+        xiaoliangganMessage.style.display = "block"; // Show 小量感 message
     }
+
     showResultButton.style.display = "block";
     backButton.style.display = "none";
     nextButton.style.display = "none"; // Hide the next button
     document.querySelector(".result").style.display = "block"; // Show the result button
 }
 
-
 function handleNextButton() {
     currentQuestionIndex++;
-    if(currentQuestionIndex < questions.length) {
+    if (currentQuestionIndex < questions.length) {
         showQuestion();
     } else {
         showScore();
@@ -136,7 +145,6 @@ function handleNextButton() {
 }
 
 function handleBackButton() {
-    // Decrement the currentQuestionIndex and adjust score if necessary
     if (currentQuestionIndex > 0) {
         if (selectedAnswers[currentQuestionIndex] === true) {
             score--; // Adjust score if going back from a correct answer
@@ -146,11 +154,11 @@ function handleBackButton() {
     }
 }
 
-nextButton.addEventListener("click", ()=>{
-    if(currentQuestionIndex < questions.length){
+nextButton.addEventListener("click", () => {
+    if (currentQuestionIndex < questions.length) {
         handleNextButton();
     } else {
-        startQuiz()
+        startQuiz();
     }
 });
 
@@ -168,6 +176,8 @@ showResultButton.addEventListener("click", () => {
     h1Element.innerHTML = "快來领取您的专属奖励";
     hrElement.style.display = "block";
     showResultButton.style.display = "none";
+    daliangganMessage.style.display = "none";
+    xiaoliangganMessage.style.display = "none";
 });
 
 startQuiz();
