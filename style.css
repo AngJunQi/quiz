@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'KaiTi', sans-serif;
+    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
     box-sizing: border-box;
 }
 
@@ -12,7 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: "KaiTi";
+    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
 }
 
 .app h1 {
@@ -42,7 +42,7 @@ hr {
     color: #001e4d;
     font-weight: 600;
     margin-bottom: 20px;
-    font-family: "KaiTi";
+    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
 }
 
 .btn {
@@ -91,7 +91,7 @@ hr {
 }
 
 #answer-buttons {
-    font-family: "KaiTi";
+    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
 }
 
 .result {
@@ -120,7 +120,7 @@ hr {
     font-weight: bold;
     color: #001e4d;
     margin-top: 20px;
-    font-family: "KaiTi";
+    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
 }
 
 #result-text2 {
@@ -128,7 +128,7 @@ hr {
     font-weight: bold;
     color: #001e4d;
     margin-top: 5px;
-    font-family: "KaiTi";
+    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
 }
 
 #result-text3 {
@@ -136,7 +136,7 @@ hr {
     font-weight: bold;
     color: #edece8;
     margin-top: 20px;
-    font-family: "KaiTi";
+    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
 }
 
 #result3-btn {
@@ -150,7 +150,7 @@ hr {
     font-size: 14px;
     color: #001e4d;
     margin-top: 20px;
-    font-family: "KaiTi";
+    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
 }
 #hr {
     margin-top: 50px;
