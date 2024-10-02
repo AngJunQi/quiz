@@ -386,6 +386,7 @@ showResultButton.addEventListener("click", () => {
     h1Element.innerHTML = "快來领取您的专属奖励";
     hrElement.style.display = "block";
     showResultButton.style.display = "none";
+    showResultButton2.style.display = "none";
     daliangganMessage.style.display = "none";
     xiaoliangganMessage.style.display = "none";
 });
@@ -394,6 +395,23 @@ showResultButton2.addEventListener("click", () => {
     app1.style.display = 'none';
     app2.style.display = 'block';
     startQuiz2();
+});
+
+showResultButton2_2.addEventListener("click", () => {
+    app1.style.display = 'block';
+    app2.style.display = 'none';
+    resultText1.style.display = "block";
+    resultText2.style.display = "block";
+    result3Btn.style.display = "block";
+    resultText3.style.display = "block";
+    resultText5.style.display = "block";
+    questionElement.style.display = "none";
+    h1Element.innerHTML = "快來领取您的专属奖励";
+    hrElement.style.display = "block";
+    showResultButton.style.display = "none";
+    showResultButton2.style.display = "none";
+    daliangganMessage.style.display = "none";
+    xiaoliangganMessage.style.display = "none";
 });
 
 startQuiz();
