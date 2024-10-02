@@ -24,6 +24,15 @@ body {
     font-family: "KaiTi";
 }
 
+.app2 h1 {
+    font-size: 32px;
+    color: #001e4d;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "KaiTi";
+}
+
 hr {
     width: 75%; /* Adjust the percentage or use a fixed width like 300px */
     border: 1px solid #001e4d; /* You can customize the color */
@@ -94,6 +103,37 @@ hr {
     font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
 }
 
+#back-btn-2 {
+    background: grey;
+    color: #fff;
+    width: 20%;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: none;
+}
+
+#next-btn-2 {
+    background: grey;
+    color: white;
+    font-weight: 500;
+    width: 50%;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+#answer-buttons-2 {
+    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
+}
+
 .result {
     text-align: center;
     margin-top: 20px;
@@ -112,6 +152,22 @@ hr {
 }
 
 #show-result-btn:hover {
+    background: #1d2f1a;
+}
+
+#show-result-btn2 {
+    background: #71906e;
+    color: white;
+    font-weight: 500;
+    width: 60%;
+    padding: 15px;
+    margin: auto;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+#show-result-btn2:hover {
     background: #1d2f1a;
 }
 
@@ -155,6 +211,79 @@ hr {
 #hr {
     margin-top: 50px;
 }
+
+#show-result-btn-2 {
+    background: #71906e;
+    color: white;
+    font-weight: 500;
+    width: 60%;
+    padding: 15px;
+    margin: auto;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+#show-result-btn-2:hover {
+    background: #1d2f1a;
+}
+
+#show-result-btn2-2 {
+    background: #71906e;
+    color: white;
+    font-weight: 500;
+    width: 60%;
+    padding: 15px;
+    margin: auto;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+#show-result-btn2-2:hover {
+    background: #1d2f1a;
+}
+
+#result-text1-2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #001e4d;
+    margin-top: 20px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
+}
+
+#result-text2-2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #001e4d;
+    margin-top: 5px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
+}
+
+#result-text3-2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #edece8;
+    margin-top: 20px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
+}
+
+#result3-btn-2 {
+    background: #71906e;
+    margin: auto;
+    border-radius: 15px;
+    width: 80%;
+}
+
+#result-text5-2 {
+    font-size: 14px;
+    color: #001e4d;
+    margin-top: 20px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
+}
+#hr-2 {
+    margin-top: 50px;
+}
 /* Responsive design: tablet */
 @media (min-width: 768px) {
     .app {
@@ -165,6 +294,19 @@ hr {
 /* Responsive design: desktop */
 @media (min-width: 1024px) {
     .app {
+        max-width: 800px;
+    }
+}
+/* Responsive design: tablet */
+@media (min-width: 768px) {
+    .app2 {
+        max-width: 600px;
+    }
+}
+
+/* Responsive design: desktop */
+@media (min-width: 1024px) {
+    .app2 {
         max-width: 800px;
     }
 }
