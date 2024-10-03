@@ -93,6 +93,7 @@ const answerButtons_2 = document.getElementById("answer-buttons-2");
 const nextButton_2 = document.getElementById("next-btn-2");
 const backButton_2 = document.getElementById("back-btn-2");
 const showResultButton2_2 = document.getElementById("show-result-btn-2");
+const showResultButton3_2 = document.getElementById("show-result-btn-3");
 const resultText1_2 = document.getElementById("result-text1");
 const resultText2_2 = document.getElementById("result-text2");
 const resultText3_2 = document.getElementById("result-text3");
@@ -151,6 +152,7 @@ function startQuiz2() {
     nextButton_2.innerHTML = "继续";
     backButton_2.style.display = "none";
     showResultButton2_2.style.display = 'none';
+    showResultButton3_2.style.display = 'none';
     showQuestion2();
 }
 
@@ -314,6 +316,7 @@ function showResult2() {
     nextButton_2.style.display = "none";
     backButton_2.style.display = "none";
     showResultButton2_2.style.display = "block";
+    showResultButton3_2.style.display = "block";
 }
 
 
@@ -412,6 +415,10 @@ showResultButton2_2.addEventListener("click", () => {
     showResultButton2.style.display = "none";
     daliangganMessage.style.display = "none";
     xiaoliangganMessage.style.display = "none";
+});
+
+showResultButton3_2.addEventListener("click", () => {
+    window.open("https://wa.me/60350383343?text=Hello%20I%20want%20to%20learn%20more%20about%20your%20services", "_blank");
 });
 
 startQuiz();

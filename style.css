@@ -228,6 +228,22 @@ hr {
     background: #1d2f1a;
 }
 
+#show-result-btn-3 {
+    background: #71906e;
+    color: white;
+    font-weight: 500;
+    width: 60%;
+    padding: 15px;
+    margin: auto;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+#show-result-btn-3:hover {
+    background: #1d2f1a;
+}
+
 #show-result-btn2-2 {
     background: #71906e;
     color: white;
