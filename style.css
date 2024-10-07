@@ -46,7 +46,7 @@ hr {
     text-align: center;
 }
 
-.quiz h2 {
+#question {
     font-size: 24px;
     color: #001e4d;
     font-weight: 600;
@@ -146,6 +146,7 @@ hr {
     width: 60%;
     padding: 15px;
     margin: auto;
+    margin-top: 50px;
     cursor: pointer;
     transition: all 0.3s;
     font-size: 16px;

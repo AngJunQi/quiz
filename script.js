@@ -40,32 +40,32 @@ const questions2 = [
     {
         question: "选择你的脸型",
         answers: [
-            { text: "脸部长度大于宽度 线条流畅", answer: '1A' },
-            { text: "脸部长度和宽度相近 线条圆润 下巴较短", answer: '1B' },
-            { text: "颚骨宽度大于额头和下巴 呈现倒三角形", answer: '1C' },
+            { text: "脸部长度大于宽度<br>线条流畅", answer: '1A' },
+            { text: "脸部长度和宽度相近<br>线条圆润 下巴较短", answer: '1B' },
+            { text: "颚骨宽度大于额头和下巴<br>呈现倒三角形", answer: '1C' },
         ]
     },
     {
         question: "选择你的眼型",
         answers: [
-            { text: "眼尾上挑 内眼角偏尖锐 眼睛较窄长", answer: '2A' },
-            { text: "上眼呈圆弧 内眼角偏圆钝 眼睛较宽", answer: '2B' },
-            { text: "上眼呈圆弧 眼尾下垂 下眼较平直", answer: '2C' },
+            { text: "眼尾上挑<br>内眼角偏尖锐<br>眼睛较窄长", answer: '2A' },
+            { text: "上眼呈圆弧<br>内眼角偏圆钝<br>眼睛较宽", answer: '2B' },
+            { text: "上眼呈圆弧<br>眼尾下垂<br>下眼较平直", answer: '2C' },
         ]
     },
     {
         question: "选择你的鼻型",
         answers: [
-            { text: "线条笔直 鼻尖精致", answer: '3A' },
+            { text: "线条笔直<br>鼻尖精致", answer: '3A' },
             { text: "鼻头圆润饱满", answer: '3B' },
-            { text: "鼻头较尖且有弧度 微微鹰钩", answer: '3C' },
+            { text: "鼻头较尖且有弧度<br>微微鹰钩", answer: '3C' },
         ]
     },
     {
         question: "选择你的嘴型",
         answers: [
-            { text: "唇部形状小巧 薄厚适中", answer: '4A' },
-            { text: "唇部形状适中 厚度偏薄", answer: '4B' },
+            { text: "唇部形状小巧<br>薄厚适中", answer: '4A' },
+            { text: "唇部形状适中<br>厚度偏薄", answer: '4B' },
             { text: "唇部形状偏大且饱满", answer: '4C' },
         ]
     }
@@ -99,10 +99,15 @@ const resultText2_2 = document.getElementById("result-text2");
 const resultText3_2 = document.getElementById("result-text3");
 const resultText5_2 = document.getElementById("result-text5");
 const result3Btn_2 = document.getElementById("result3-btn");
+const result1 = document.getElementById("result1");
+const result2 = document.getElementById("result2");
+const result3 = document.getElementById("result3");
 
 // Adding new elements for displaying the final result messages
 const daliangganMessage = document.getElementById("dalianggan-message");
 const xiaoliangganMessage = document.getElementById("xiaolianggan-message");
+const daliangganMessage2 = document.getElementById("dalianggan-message-2");
+const xiaoliangganMessage2 = document.getElementById("xiaolianggan-message-2");
 
 let selectedAnswers = [];
 let selectedAnswers2 = [];
@@ -226,10 +231,12 @@ function showScore() {
     
     // Show specific result message based on the score
     if (score > 2) {
-        questionElement.innerHTML = '大量感五官';
+        questionElement.style.display = "none";
+        result1.innerHTML = '大量感五官';
         daliangganMessage.style.display = "block"; // Show 大量感 message
     } else {
-        questionElement.innerHTML = '小量感五官';
+        questionElement.style.display = "none";
+        result1.innerHTML = '小量感五官';
         xiaoliangganMessage.style.display = "block"; // Show 小量感 message
     }
 
@@ -306,11 +313,21 @@ function showResult2() {
         }
     }
 
+    if (score > 2) {
+        result3.innerHTML = '大量感五官';
+        daliangganMessage2.style.display = "block"; // Show 大量感 message
+    } else {
+        result3.innerHTML = '小量感五官';
+        xiaoliangganMessage2.style.display = "block"; // Show 小量感 message
+    }
+
     // Display the result
     if (resultMessage) {
-        questionElement_2.innerHTML = `您的结果是：${resultMessage}`;
+        questionElement_2.style.display = "none";
+        result2.innerHTML = `您的结果是：${resultMessage}`;
     } else {
-        questionElement_2.innerHTML = "无法确定您的结果，请重新答题。";
+        questionElement_2.style.display = "none";
+        result2.innerHTML = "无法确定您的结果，请重新答题。";
     }
 
     nextButton_2.style.display = "none";
@@ -386,6 +403,7 @@ showResultButton.addEventListener("click", () => {
     resultText3.style.display = "block";
     resultText5.style.display = "block";
     questionElement.style.display = "none";
+    result1.style.display = "none";
     h1Element.innerHTML = "快來领取您的专属奖励";
     hrElement.style.display = "block";
     showResultButton.style.display = "none";
@@ -409,6 +427,8 @@ showResultButton2_2.addEventListener("click", () => {
     resultText3.style.display = "block";
     resultText5.style.display = "block";
     questionElement.style.display = "none";
+    result1.style.display = "none";
+    result2.style.display = "none";
     h1Element.innerHTML = "快來领取您的专属奖励";
     hrElement.style.display = "block";
     showResultButton.style.display = "none";
