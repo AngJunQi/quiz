@@ -102,6 +102,7 @@ const result3Btn_2 = document.getElementById("result3-btn");
 const result1 = document.getElementById("result1");
 const result2 = document.getElementById("result2");
 const result3 = document.getElementById("result3");
+const resultM = document.getElementById("result-message");
 
 // Adding new elements for displaying the final result messages
 const daliangganMessage = document.getElementById("dalianggan-message");
@@ -330,6 +331,48 @@ function showResult2() {
         result2.innerHTML = "无法确定您的结果，请重新答题。";
     }
 
+    switch(resultMessage){
+        case "猫系长相":
+            resultM.innerHTML = '眼尾上挑，口唇小巧，面部顿感适中，像猫咪一样傲娇与性感并存<br>抗衰要注重下面部的紧致提升，可以再生材料补充胶原蛋白<br>美貌不变形，猫咪不发腮';
+            resultM.style.display = "block";
+            break;
+        case "狼系长相":
+            resultM.innerHTML = '轮毂硬朗干练，深邃的眼眸透露出女王的霸气，相比犬系和狐系<br>更加冷漠疏离，注重下面部胶原补充，别让法令纹阻碍你的美<br>艾维岚对于鼻唇沟似乎是个不错的选择';
+            resultM.style.display = "block";
+            break;
+        case "鱼系长相":
+            resultM.innerHTML = '面部五官辨识度极高，眼距宽<br>嘴唇饱满，具有一种外放的美<br>显年轻的长相';
+            resultM.style.display = "block";
+            break;
+        case "鸟系长相":
+            resultM.innerHTML = '鼻子细长高挺，面部圆中有尖，但没有攻击性<br>像小鸟一样灵动俏皮<br>但要注重两颊和苹果肌的紧致';
+            resultM.style.display = "block";
+            break;
+        case "狐系长相":
+            resultM.innerHTML = '多眼尾上挑，自带神秘且魅惑的眼神，线条清晰笔直<br>攻击性散发，但让人忍不住靠近，眼部是精髓，需要注重眼部抗衰<br>进行眼部韧带的滋养，防止眼尾下垂';
+            resultM.style.display = "block";
+            break;
+        case "鹿系长相":
+            resultM.innerHTML = '面部轻盈紧致，眼睛灵动有神，十分适合森系妆容<br>不要盲目填充，也不宜过度削减，容易损失灵气感<br>适当维护胶原即可';
+            resultM.style.display = "block";
+            break;
+        case "兔系长相":
+            resultM.innerHTML = '圆圆的眼睛，饱满的面部，有些还有经典兔牙<br>拥有天生的幼态脸，医美思路要适当给软组织做减法';
+            resultM.style.display = "block";
+            break;
+        case "犬系长相":
+            resultM.innerHTML = '眼尾下垂的狗狗眼，柔和的鼻子，笑起来一眼心动<br>散发着狗狗一样的纯真感，抗衰重点在面部的紧致<br>记得补充胶原蛋白，保持你的美';
+            resultM.style.display = "block";
+            break;
+        case "豚系长相":
+            resultM.innerHTML = '面部饱满，清一色的圆润线条，憨憨的可爱<br>做好日常胶原维护，你的美经得起时间的考验<br>丰盈的软组织是天生的优势，切忌大量填充';
+            resultM.style.display = "block";
+            break;
+        case "蛇系长相":
+            resultM.innerHTML = '极度锐利的面部轮廓，倒三角脸形，具有攻击性的五官<br>散发生人勿近的压迫感，细节调整别大动，维护好现在的面部状态<br>想要柔和可以适当调整妆容选择膨胀色<br>或适当胶原定投微饱满组织， 千万不要大量填面中';
+            resultM.style.display = "block";
+            break;
+    }
     nextButton_2.style.display = "none";
     backButton_2.style.display = "none";
     showResultButton2_2.style.display = "block";
